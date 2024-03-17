@@ -1,87 +1,36 @@
-# Third-Party APIs: Work Day Scheduler
+# Calendar Planner App
 
-## Your Task
+This project is a browser-based calendar planner application built using HTML, CSS, JavaScript and the Day.js library. The app dynamically updates its content to provide users with an intuitive and interactive experience for managing their daily schedule.
 
-Create a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+## Features
+* Display Current Day
+When the user opens the planner the current day is displayed at the top of the calendar.
 
-You'll need to use the [Day.js](https://day.js.org/docs/en/display/format) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Day.js in the browser.
+## Timeblocks for Business Hours
+Timeblocks for standard business hours are presented when the user scrolls down, providing a structured layout for scheduling.
 
-## User Story
+## Colour-coded Timeblocks
+Each timeblock is colour-coded to indicate whether it's in the past, present, or future when viewed by the user. This visual distinction helps users easily identify upcoming events.
 
-```md
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+## Event Scheduling
+Users can click on a timeblock to enter an event or schedule an appointment for that specific time.
 
-## Acceptance Criteria
+## Local Storage Integration
+Events entered by the user are saved in the browser's local storage when the save button is clicked within a timeblock. This ensures that events persist between page refreshes, allowing users to access their schedule across sessions.
 
-The app should:
+## Usage
 
-* Display the current day at the top of the calender when a user opens the planner.
- 
-* Present timeblocks for standard business hours when the user scrolls down.
- 
-* Color-code each timeblock based on past, present, and future when the timeblock is viewed.
- 
-* Allow a user to enter an event when they click a timeblock
+Upon opening the app, observe the current day displayed at the top of the calendar.
+Scroll down to view the timeblocks for standard business hours.
+Click on a timeblock to enter an event or appointment.
+After entering the event details, click the save button to store the event in local storage.
+The saved events will persist even after refreshing the page, allowing users to manage their schedule seamlessly.
 
-* Save the event in local storage when the save button is clicked in that timeblock.
+## Technologies Used
+HTML
+CSS
+JavaScript
+Day.js - A lightweight JavaScript library for working with dates and times.
 
-* Persist events between refreshes of a page
-
-The following animation demonstrates the application functionality:
-
-![A user clicks on slots on the color-coded calendar and edits the events.](./images/05-third-party-apis-homework-demo.gif)
-
-
-## Grading Requirements
-
-This homework is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * Uses a date utility library to work with date and time
-
-### Deployment: 32%
-
-* Application deployed at live URL
-
-* Application loads with no errors
-
-* Application GitHub URL submitted
-
-* GitHub repo contains application code
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate
-
-* Application user interface style is clean and polished
-
-* Application resembles the mock-up functionality provided in the homework instructions
-
-### Repository Quality: 13%
-
-* Repository has a unique name
-
-* Repository follows best practices for file structure and naming conventions
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages
-
-* Repository contains quality README file with description, screenshot, and link to deployed application
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application
-
-* The URL of the GitHub repository, with a unique name and a README describing the project
-
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+## License
+Distributed under the MIT License. See LICENSE for more information. IT License Copyright (c) 2024 Rehyan Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
