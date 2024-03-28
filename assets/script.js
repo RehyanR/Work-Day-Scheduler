@@ -31,6 +31,13 @@ for (var hour = 9; hour <= 17; hour++) {
 
 function getTimeBlockClass(hour) {
   var currentHour = dayjs().hour();
+  if (hour < currentHour) {
+    return "col-10 description past";
+  } else if (hour === currentHour) {
+    return "col-10 description present";
+  } else {
+    return "col-10 description future";
+  }
 }
 
 function getLocalStorageKey(hour) {
