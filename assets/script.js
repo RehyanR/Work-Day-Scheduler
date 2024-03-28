@@ -18,13 +18,16 @@ for (var hour = 9; hour <= 17; hour++) {
   if (event !== null) {
     textArea.val(event);
   }
-}
 
-saveBtn.click(function () {
-  var hour = $(this).parent().data("hour");
-  var event = $(this).siblings(".description").val();
-  localStorage.setItem(getLocalStorageKey(hour), event);
-});
+  saveBtn.click(function () {
+    var hour = $(this).parent().data("hour");
+    var event = $(this).siblings(".description").val();
+    localStorage.setItem(getLocalStorageKey(hour), event);
+  });
+
+  timeBlock.append(hourCol, textArea, saveBtn);
+  $(".container").append(timeBlock);
+}
 
 function getLocalStorageKey(hour) {
   return "event_" + dayjs().format("YYYY-MM-DD") + "_" + hour;
