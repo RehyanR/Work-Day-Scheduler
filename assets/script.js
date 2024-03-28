@@ -10,6 +10,9 @@ for (var hour = 9; hour <= 17; hour++) {
   var textArea = $("<textarea>")
     .addClass("col-10 description")
     .addClass(getTimeBlockClass(hour));
+  var saveBtn = $("<button>")
+    .addClass("col-1 saveBtn")
+    .html('<i class="fas fa-save"></i>');
 }
 
 function getLocalStorageKey(hour) {
