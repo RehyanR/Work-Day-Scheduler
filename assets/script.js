@@ -3,7 +3,6 @@ $(document).ready(function () {
 });
 
 
-
 function getLocalStorageKey(hour) {
-    return "event_" + dayjs().format("YYYY-MM-DD") + "_" + hour;
-  }
+  return "event_" + dayjs().format("YYYY-MM-DD") + "_" + hour;
+}
