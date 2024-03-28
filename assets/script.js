@@ -7,6 +7,9 @@ for (var hour = 9; hour <= 17; hour++) {
   var hourCol = $("<div>")
     .addClass("col-1 hour")
     .text(dayjs().hour(hour).format("hA"));
+  var textArea = $("<textarea>")
+    .addClass("col-10 description")
+    .addClass(getTimeBlockClass(hour));
 }
 
 function getLocalStorageKey(hour) {
