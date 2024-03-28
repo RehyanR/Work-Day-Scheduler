@@ -20,6 +20,12 @@ for (var hour = 9; hour <= 17; hour++) {
   }
 }
 
+saveBtn.click(function () {
+  var hour = $(this).parent().data("hour");
+  var event = $(this).siblings(".description").val();
+  localStorage.setItem(getLocalStorageKey(hour), event);
+});
+
 function getLocalStorageKey(hour) {
   return "event_" + dayjs().format("YYYY-MM-DD") + "_" + hour;
 }
