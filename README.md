@@ -35,7 +35,8 @@ Day.js - A lightweight JavaScript library for working with dates and times.
 
 ## Screenshot
 
-
+![Example of saved day schedule](<assets/images/work day scheduler 1.png>)
+![Example of saved day schedule at the end of the day. 5PM](<assets/images/work day scheduler 2.png>)
 
 ## License
 
