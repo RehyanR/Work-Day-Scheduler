@@ -4,6 +4,9 @@ $(document).ready(function () {
 
 for (var hour = 9; hour <= 17; hour++) {
   var timeBlock = $("<div>").addClass("row time-block").attr("data-hour", hour);
+  var hourCol = $("<div>")
+    .addClass("col-1 hour")
+    .text(dayjs().hour(hour).format("hA"));
 }
 
 function getLocalStorageKey(hour) {
