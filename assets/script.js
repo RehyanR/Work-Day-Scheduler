@@ -13,6 +13,11 @@ for (var hour = 9; hour <= 17; hour++) {
   var saveBtn = $("<button>")
     .addClass("col-1 saveBtn")
     .html('<i class="fas fa-save"></i>');
+
+  var event = localStorage.getItem(getLocalStorageKey(hour));
+  if (event !== null) {
+    textArea.val(event);
+  }
 }
 
 function getLocalStorageKey(hour) {
