@@ -29,6 +29,10 @@ for (var hour = 9; hour <= 17; hour++) {
   $(".container").append(timeBlock);
 }
 
+function getTimeBlockClass(hour) {
+  var currentHour = dayjs().hour();
+}
+
 function getLocalStorageKey(hour) {
   return "event_" + dayjs().format("YYYY-MM-DD") + "_" + hour;
 }
